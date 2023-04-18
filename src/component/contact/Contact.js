@@ -74,7 +74,6 @@ function Contact() {
         <span>liaqattops@gmail.com</span>
       </div>
       <div className="map-wrap">
-        
       </div>
     </div>
   );
