@@ -22,16 +22,17 @@ const About = () => {
   }, []);
 
   return (
-    <Box sx={{display:"flex",height:"100%",alignItems:"center"}}>
-      <Box sx={{ml:10}}>
+    <div className="container about-page">
+    <div className="text-zone">
         <h1>
           <AnimatedLetters
             letterClass={letterClass}
             strArray={["A", "b", "o", "u", "t", " ", "m", "e"]}
             idx={15}
           />
+          <br/>
         </h1>
-        <p>
+        <p className="margin-top">
           I am a very ambitious front-end developer looking for a role in an
           established IT company with the opportunity to work with the latest
           technologies on challenging and diverse projects.
@@ -45,7 +46,8 @@ const About = () => {
           person, father of a beautiful daughter, a sports fanatic, photography
           enthusiast, and tech-obsessed!!!
         </p>
-      </Box>
+
+      </div>
 
       <div className="stage-cube-cont">
         <div className="cubespinner">
@@ -69,7 +71,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </Box>
+    </div>
   );
 };
 

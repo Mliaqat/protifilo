@@ -13,9 +13,13 @@ import {
   faClose,
 } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const Sidebar = () => {
   const [showNav, setShowNav] = useState(false);
+  const router = useRouter();
+  const { pathname } = router;
+  console.log(pathname);
 
   return (
     <div className="nav-bar">
@@ -29,31 +33,27 @@ const Sidebar = () => {
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
         <Link 
-          exact="true"
-          activeclassname="active"
+          className={pathname == "/" ? 'active' : ''}
           href="/"
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
           
         </Link>
        <Link 
-          activeclassname="active"
-          className="about-link"
+          className={pathname == "/about-us" ? 'active about-link' : 'about-link'}
           href="/about-us"
           onClick={() => setShowNav(false)}>          
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </Link>
           <Link
-          activeclassname="active"
-          className="portfolio-link"
+          className={pathname == "/portfolio" ? 'active portfolio-link' : 'portfolio-link'}
           href="/portfolio"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
         </Link>
        <Link
-          activeclassname="active"
-          className="contact-link"
+          className={pathname == "/contact" ? 'active contact-link' : 'portfolio-link'}
           href="/contact"
           onClick={() => setShowNav(false)}
         >

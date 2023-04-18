@@ -4,6 +4,7 @@ import '@/styles/animateletter.scss'
 import '@/styles/slider.scss'
 import '@/styles/about.scss'
 import '@/styles/layout.scss'
+import '@/styles/contact.scss'
 import Layout from '@/component/Layout/Layout';
 export default function App({ Component, pageProps }) {
 
