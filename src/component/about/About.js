@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AnimatedLetters from "../AnimatedLetters";
+import { Box } from "@mui/material";
 
 const About = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -21,8 +22,8 @@ const About = () => {
   }, []);
 
   return (
-    <div className="container about-page">
-      <div className="text-zone">
+    <Box sx={{display:"flex",height:"100%",alignItems:"center"}}>
+      <Box sx={{ml:10}}>
         <h1>
           <AnimatedLetters
             letterClass={letterClass}
@@ -44,7 +45,7 @@ const About = () => {
           person, father of a beautiful daughter, a sports fanatic, photography
           enthusiast, and tech-obsessed!!!
         </p>
-      </div>
+      </Box>
 
       <div className="stage-cube-cont">
         <div className="cubespinner">
@@ -68,7 +69,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Box>
   );
 };
 
