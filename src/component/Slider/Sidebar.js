@@ -39,27 +39,26 @@ const Sidebar = () => {
        <Link 
           activeclassname="active"
           className="about-link"
-          herf="/about"
-          onClick={() => setShowNav(false)}>
-            dfb
+          href="/about-us"
+          onClick={() => setShowNav(false)}>          
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </Link>
-        {/*  <Link
+          <Link
           activeclassname="active"
           className="portfolio-link"
-          herf="/portfolio"
+          href="/portfolio"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
         </Link>
-        <Link
+       <Link
           activeclassname="active"
           className="contact-link"
-          herf="/contact"
+          href="/contact"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-        </Link> */}
+        </Link>
         <FontAwesomeIcon 
           onClick={() => setShowNav(false)}
           icon={faClose}

@@ -1,13 +1,12 @@
-import { Children } from 'react'
 import Sidebar from '../Slider/Sidebar'
 
-const Layout = ({Children}) => {
+const Layout = ({children}) => {
   return (
     <div className="App">
       <Sidebar />
       <div className="page">
         <span className="tags top-tags">&lt;body&gt;</span>
-        {Children}
+        {children}
         <span className="tags bottom-tags">
           &lt;/body&gt;
           <br />
