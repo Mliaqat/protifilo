@@ -1,5 +1,5 @@
 .portfolio-page {
-  padding-left: 100px;
+  margin-left: 100px;
   padding-right: 50px;
   width: calc(100% - 150px);
   position: initial;
@@ -21,7 +21,7 @@
   .image-box {
     position: relative;
     flex: 1 1 20%;
-    height: 400px;
+    height: 300px;
     overflow: hidden;
     border-radius: 10px;
     max-width: calc(25% - 10px);

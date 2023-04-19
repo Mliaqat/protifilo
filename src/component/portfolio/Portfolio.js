@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
+import Image from 'next/image'
 
 
 
@@ -8,6 +9,7 @@ const renderPortfolio = (portfolio) => {
     return (
       <div className="images-container">
         <div className="image-box">
+          <Image src="/asset/project.png"   layout="fill" alt="My Image"/>
           {/* <img src={""} className="portfolio-image" alt="portfolio" /> */}
           <div className="content">
             <p className="title">`{"Smart Dev Spot"}`</p>

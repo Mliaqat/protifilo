@@ -8,7 +8,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AnimatedLetters from "../AnimatedLetters";
-import { Box } from "@mui/material";
 
 const About = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
